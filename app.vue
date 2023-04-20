@@ -1,6 +1,7 @@
 <template>
-  <div><v-row justify="center" align="center" class="h-screen main"><v-col style="max-width:600px">
-        <v-card v-if="items.length > 1" class="pa-5"><v-card-text class="text-center"><span class=" text-h3"> {{
+  <div><v-row justify="center" align="center" class="h-screen main"><v-col style="max-width:600px"><v-img contain
+          src="https://img.freepik.com/vetores-premium/aladdin-o-genio-do-macaco-da-lampada-magica-vetor-premium-ilustracao-do-estilo-aladin_620829-47.jpg?w=360" height="300"></v-img>
+        <v-card v-if="items.length > 1" class="pa-5"><v-card-text class="text-center"><span class=" text-h4"> {{
           ['Possui', 'Tem', 'Apresenta'][Math.floor(Math.random() * 3)] }} {{
     feature
   }}?</span>
@@ -9,8 +10,8 @@
                   variant="outlined">SIM</v-btn></v-col><v-col><v-btn block color="error" @click="answer(false)"
                   size="x-large" variant="outlined">NÃO</v-btn></v-col></v-row></v-card-actions></v-card>
         <v-card v-else class="pa-5"><v-card-text class="text-center">
-            <div v-if="items.length == 1"><span class=" text-h3">A classe é {{ items[0].name
-            }}</span><v-img :src="imagesDataset[items[0].name]"></v-img></div><span v-else class="text-h3">Classe não
+            <div v-if="items.length == 1"><span class=" text-h4">A classe é {{ items[0].name
+            }}</span><v-img :src="imagesDataset[items[0].name]" class="pt-4"></v-img></div><span v-else class="text-h4">Classe não
               encontrada</span>
           </v-card-text><v-card-actions><v-btn @click="reset" size="x-large" block variant="outlined">JOGAR
               NOVAMENTE</v-btn></v-card-actions></v-card></v-col></v-row>
@@ -19,7 +20,7 @@
 </template>
 <style>
 .main {
-  background-color: lightblue;
+  background-color: rgb(255, 173, 176);
   background-size: cover;
 }
 </style>
@@ -86,6 +87,7 @@ export default {
     }
   },
   created() {
+    console.log("initialized")
     this.reset()
   }
 }
