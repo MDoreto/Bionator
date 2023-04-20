@@ -56,7 +56,7 @@ export const classes = [
                                                         name: "Synapsida", features: ["1 abertura temporal no crânio"],
                                                         children: [
                                                             {
-                                                                name: "Mammalia", features: ["pelos","glândulas mamárias","glândulas sebáceas","glândulas sudoríparas","bochechas"],
+                                                                name: "Mammalia", features: ["pelos","glândulas mamárias","glândulas sebáceas","glândulas sudoríparas","bochechas", "orelha","glândulas odoríferas","ossos turbinados"],
                                                                 children: [
                                                                     {
                                                                         name: "Monotremata", features: ["reprodução exclusivamente ovípara"]
