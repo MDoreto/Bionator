@@ -3,11 +3,12 @@
         <v-card v-if="items.length > 1" class="pa-5"><v-card-text class="text-center"><span class=" text-h3"> Possui {{
           feature
         }}?</span>
+            <!-- <SearchImage :phrase="feature" /> -->
           </v-card-text><v-card-actions><v-row><v-col><v-btn block color="success" @click="answer(true)" size="x-large"
                   variant="outlined">SIM</v-btn></v-col><v-col><v-btn block color="error" @click="answer(false)"
                   size="x-large" variant="outlined">NÃO</v-btn></v-col></v-row></v-card-actions></v-card>
         <v-card v-else class="pa-5"><v-card-text class="text-center"> <span class=" text-h3">A classe é {{ items[0].name
-        }}</span></v-card-text><v-card-actions><v-btn @click="reset" size="x-large" block  variant="outlined">JOGAR
+        }}</span></v-card-text><v-card-actions><v-btn @click="reset" size="x-large" block variant="outlined">JOGAR
               NOVAMENTE</v-btn></v-card-actions></v-card></v-col></v-row>
 
   </div>
