@@ -10,7 +10,8 @@
                   size="x-large" variant="outlined">NÃO</v-btn></v-col></v-row></v-card-actions></v-card>
         <v-card v-else class="pa-5"><v-card-text class="text-center">
             <div v-if="items.length == 1"><span class=" text-h3">A classe é {{ items[0].name
-            }}</span><v-img :src="imagesDataset[items[0].name]"></v-img></div><span v-else class="text-h3">Classe não encontrada</span>
+            }}</span><v-img :src="imagesDataset[items[0].name]"></v-img></div><span v-else class="text-h3">Classe não
+              encontrada</span>
           </v-card-text><v-card-actions><v-btn @click="reset" size="x-large" block variant="outlined">JOGAR
               NOVAMENTE</v-btn></v-card-actions></v-card></v-col></v-row>
 
@@ -26,7 +27,8 @@
 export default {
   data: () => ({
     feature: null,
-    items: []
+    items: [],
+    history: []
   }),
   methods: {
     getItems(items, features) {
@@ -58,13 +60,18 @@ export default {
         const diff = Math.abs(features[feature] - (array.length - features[feature]));
         featuresWithDiff.push({ feature, diff });
       }
+
+      var realFeats = featuresWithDiff.filter((f) => this.history.indexOf(f) < 0)
       // Ordena o array por diferença e seleciona as 30% primeiras
-      const sortedFeatures = featuresWithDiff.sort((a, b) => a.diff - b.diff);
-      const numFeaturesToConsider = Math.ceil(sortedFeatures.length * 0.3);
+      const sortedFeatures = realFeats.sort((a, b) => a.diff - b.diff);
+      if (this.items.length > 3)
+        var numFeaturesToConsider = Math.ceil(sortedFeatures.length * 0.3);
+      else var numFeaturesToConsider = 1
       const featuresToConsider = sortedFeatures.slice(0, numFeaturesToConsider);
 
       // Sorteia uma das features selecionadas aleatoriamente
       const chosenFeature = featuresToConsider[Math.floor(Math.random() * featuresToConsider.length)].feature;
+      this.history.push(chosenFeature)
       return chosenFeature;
     },
     answer(response) {
@@ -72,6 +79,7 @@ export default {
       this.feature = this.getFeature()
     },
     reset() {
+      this.history = []
       this.getItems(classes, [])
       this.feature = this.getFeature()
     }

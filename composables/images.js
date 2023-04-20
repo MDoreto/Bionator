@@ -11,10 +11,10 @@ export const imagesDataset = {
     Actinistia: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Latimeria_Paris.jpg/800px-Latimeria_Paris.jpg",
     Lissamphibia: "https://upload.wikimedia.org/wikipedia/commons/5/51/Amphibians.png",
     Monotremata: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Monotreme_collage.jpg/1200px-Monotreme_collage.jpg",
-    Theria: "https://upload.wikimedia.org/wikipedia/commons/0/03/Eutheria.png",
+    Eutheria: "https://upload.wikimedia.org/wikipedia/commons/0/03/Eutheria.png",
     Marsupialia: "https://upload.wikimedia.org/wikipedia/commons/6/6a/Marsupialia.jpg",
     Lepidossauria: "https://upload.wikimedia.org/wikipedia/commons/8/8c/Lepidosauria_Diversity.jpg",
-    Testudines: "https://upload.wikimedia.org/wikipedia/commons/2/21/Turtle_diversity.jpg",
+    Testudine: "https://upload.wikimedia.org/wikipedia/commons/2/21/Turtle_diversity.jpg",
     Crocodylia: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Crocodilia_montage.jpg/800px-Crocodilia_montage.jpg",
     Aves: "https://cdn.ambientes.ambientebrasil.com.br/wp-content/uploads/2020/12/mix_imagens_aves_2.jpg"
 }

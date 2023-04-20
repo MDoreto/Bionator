@@ -2,7 +2,7 @@ export const classes = [
     {
         name: "Cephalochordata", features: ["notocorda persistente em adultos", "câmara cardiaca única", "ausência de dentes verdadeiros"],
     }, {
-        name: "Urocordata", features: ["uma túnica", "sistema de filtração de água altamente especializado", "coração tubular", "ausência de dentes verdadeiros"],
+        name: "Urochordata", features: ["uma túnica", "sistema de filtração de água altamente especializado", "coração tubular", "ausência de dentes verdadeiros"],
     },
     {
         name: "Craniata", features: ["crânio"],
