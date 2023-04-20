@@ -1,8 +1,8 @@
 export const classes = [
     {
-        name: "Cephalochordata", features: ["notocorda persistente em adultos", "câmara cardíaca única", "ausência de dentes verdadeiros"],
+        name: "Cephalochordata", features: ["notocorda persistente em adultos", "câmara cardíaca única"],
     }, {
-        name: "Urochordata", features: ["uma túnica", "sistema de filtração de água altamente especializado", "coração tubular", "ausência de dentes verdadeiros"],
+        name: "Urochordata", features: ["uma túnica", "sistema de filtração de água altamente especializado", "coração tubular"],
     },
     {
         name: "Craniata", features: ["crânio"],
@@ -19,13 +19,13 @@ export const classes = [
                                         name: "Actinistia", features: ["bexiga natatória","escamas ou placas córneas"]
                                     },
                                     {
-                                        name: "Dipnoi", features: ["pulmão alveolado", "osso maxilar","escamas ou placas córneas"]
+                                        name: "Dipnoi", features: ["pulmão alveolado","escamas ou placas córneas"]
                                     },
                                     {
-                                        name: "Tetrapoda", features: ["pulmão alveolado", "osso maxilar", "4 membros no histórico evolutivo"],
+                                        name: "Tetrapoda", features: ["pulmão alveolado", "4 membros no histórico evolutivo"],
                                         children: [
                                             {
-                                                name: "Lissamphibia", features: ["glândulas mucosas", "glândulas granulares", "papila amphibiorum", "complexo opercular-plectro", "bastonetes verdes","dentes pendicelados","músculo levator bulbi"]
+                                                name: "Lissamphibia", features: ["glândulas mucosas", "glândulas granulares", "papila amphibiorum", "bastonetes verdes","dentes pendicelados","músculo levator bulbi"]
                                             },
                                             {
                                                 name: "Amniota", features: ["3 membranas extra-embrionárias"],
@@ -89,23 +89,23 @@ export const classes = [
                         name: "Chondrichthyes", features: ["esqueleto cartilaginoso", "nadadeiras", "cláspers pélvicos (machos)"],
                         children: [
                             {
-                                name: "Tubarão", feature: ["mar aberto como habitat", "dentes pontiagudos e cerrilhados que ficam enfileirados", "fendas branquiais laterais", "ampolas de lorenzini","escamas ou placas córneas"]
+                                name: "Tubarão", feature: ["dentes pontiagudos e serrilhados que ficam enfileirados", "fendas branquiais laterais", "ampolas de lorenzini","escamas ou placas córneas"]
                             },
                             {
-                                name: "Arraia", features: ["fundo do mar como habitat", "olhos dorsais", "fendas branquiais ventrais", "corpo achatado", "nadadeiras peitorais hiper desenvolvidas", "nadadeira caudal em forma de chicote", "nadeira com espinhos ou toxinas","escamas ou placas córneas"]
+                                name: "Arraia", features: ["olhos dorsais", "fendas branquiais ventrais", "corpo achatado", "nadadeiras peitorais hiper desenvolvidas", "nadadeira caudal em forma de chicote", "nadeira com espinhos ou toxinas","escamas ou placas córneas"]
                             },
                             {
-                                name: "Quimera", features: ["fundo do mar como habitat", "fendas branquiais recobertas por um opérculo"]
+                                name: "Quimera", features: ["fendas branquiais recobertas por um opérculo"]
                             }
                         ]
                     }]
             },
 
             {
-                name: "Minoxydea", features: ["boca circular", "hábito carniceiro", "mecanismo de defesa baseado na produção de mucosa em grande quantidade", "mecanismo de escape baseado em dar um nó em si mesmo", "ausência de dentes verdadeiros"]
+                name: "Minoxydea", features: ["boca circular", "hábito carniceiro", "mecanismo de defesa baseado na produção de mucosa em grande quantidade", "mecanismo de escape baseado em dar um nó em si mesmo"]
             },
             {
-                name: "Petromyzontoidea", features: ["ausência de dentes verdadeiros", "hábito vampírico", "boca circular", "hábitos parasitas", "vértebras"]
+                name: "Petromyzontoidea", features: ["hábito vampírico", "boca circular", "hábitos parasitas", "vértebras"]
             },
         ]
     }

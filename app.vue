@@ -87,7 +87,7 @@ export default {
     }
   },
   created() {
-    console.log("initialized")
+    console.log("done")
     this.reset()
   }
 }
