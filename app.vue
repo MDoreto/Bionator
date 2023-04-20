@@ -1,21 +1,24 @@
 <template>
   <div><v-row justify="center" align="center" class="h-screen main"><v-col style="max-width:600px">
-        <v-card v-if="items.length > 1" class="pa-5"><v-card-text class="text-center"><span class=" text-h3"> {{ ['Possui', 'Tem', 'Apresenta'][Math.floor(Math.random() * 3)] }} {{
-          feature
-        }}?</span>
+        <v-card v-if="items.length > 1" class="pa-5"><v-card-text class="text-center"><span class=" text-h3"> {{
+          ['Possui', 'Tem', 'Apresenta'][Math.floor(Math.random() * 3)] }} {{
+    feature
+  }}?</span>
             <!-- <SearchImage :phrase="feature" /> -->
           </v-card-text><v-card-actions><v-row><v-col><v-btn block color="success" @click="answer(true)" size="x-large"
                   variant="outlined">SIM</v-btn></v-col><v-col><v-btn block color="error" @click="answer(false)"
                   size="x-large" variant="outlined">NÃO</v-btn></v-col></v-row></v-card-actions></v-card>
-        <v-card v-else class="pa-5"><v-card-text class="text-center"> <span class=" text-h3" v-if="items.length==1">A classe é {{ items[0].name
-        }}</span><span v-else class="text-h3">Classe não encontrada</span></v-card-text><v-card-actions><v-btn @click="reset" size="x-large" block variant="outlined">JOGAR
+        <v-card v-else class="pa-5"><v-card-text class="text-center">
+            <div v-if="items.length == 1"><span class=" text-h3">A classe é {{ items[0].name
+            }}</span><v-img :src="imagesDataset[items[0].name]"></v-img></div><span v-else class="text-h3">Classe não encontrada</span>
+          </v-card-text><v-card-actions><v-btn @click="reset" size="x-large" block variant="outlined">JOGAR
               NOVAMENTE</v-btn></v-card-actions></v-card></v-col></v-row>
 
   </div>
 </template>
 <style>
 .main {
-  background-image: url("https://static.vecteezy.com/ti/vetor-gratis/p3/1218609-colecao-de-biologia-icones-gratis-vetor.jpg");
+  background-color: lightblue;
   background-size: cover;
 }
 </style>
