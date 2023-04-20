@@ -80,6 +80,7 @@ export default {
     },
     reset() {
       this.history = []
+      this.items = []
       this.getItems(classes, [])
       this.feature = this.getFeature()
     }
