@@ -86,10 +86,10 @@ export const classes = [
                         ]
                     },
                     {
-                        name: "Chondrichthyes", features: ["esqueleto cartilaginoso", "nadadeiras", "cláspers pélvicos (machos)"],
+                        name: "Chondrichthyes", features: ["ampolas de lorenzini","esqueleto cartilaginoso", "nadadeiras", "cláspers pélvicos (machos)"],
                         children: [
                             {
-                                name: "Tubarão", feature: ["dentes pontiagudos e serrilhados que ficam enfileirados", "fendas branquiais laterais", "ampolas de lorenzini","escamas ou placas córneas"]
+                                name: "Tubarão", feature: ["dentes pontiagudos e serrilhados que ficam enfileirados", "fendas branquiais laterais", "escamas ou placas córneas"]
                             },
                             {
                                 name: "Arraia", features: ["olhos dorsais", "fendas branquiais ventrais", "corpo achatado", "nadadeiras peitorais hiper desenvolvidas", "nadadeira caudal em forma de chicote", "nadeira com espinhos ou toxinas","escamas ou placas córneas"]

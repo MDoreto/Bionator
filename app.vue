@@ -65,9 +65,7 @@ export default {
       var realFeats = featuresWithDiff.filter((f) => this.history.indexOf(f) < 0)
       // Ordena o array por diferença e seleciona as 30% primeiras
       const sortedFeatures = realFeats.sort((a, b) => a.diff - b.diff);
-      if (this.items.length > 3)
         var numFeaturesToConsider = Math.ceil(sortedFeatures.length * 0.3);
-      else var numFeaturesToConsider = 1
       const featuresToConsider = sortedFeatures.slice(0, numFeaturesToConsider);
 
       // Sorteia uma das features selecionadas aleatoriamente
